@@ -1,0 +1,21 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="ASTU SE yearbook">
+  <main class="p-4 m-auto max-w-5xl">
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="mb-2 text-3xl md:text-5xl font-bold">YearBook</h1>
+      <p>every yearbook and qoute of our class</p>
+    </div>
+
+    <ul role="list" class="grid md:grid-cols-2 gap-2">
+      <Card href="/yearbook/1" title="First Year" />
+      <Card href="/yearbook/2" title="Second Year" />
+      <Card href="/yearbook/3" title="Third Year" />
+      <Card href="/yearbook/4" title="Forth Year" />
+      <Card href="/yearbook/5" title="Fifth Year" />
+    </ul>
+  </main>
+</Layout>

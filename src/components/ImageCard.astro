@@ -1,0 +1,19 @@
+---
+export interface Props {
+  img: string;
+  name: string;
+  qoute: string;
+}
+
+const { img, name, qoute } = Astro.props;
+---
+
+<div class="w-auto flex flex-col items-center">
+  <img class="rounded-lg shadow-lg md:h-50" src={img} alt={name} />
+  
+    <h5 class="mt-1 mb-2 md:text-xl font-bold capitalize text-center text-gray-900">
+      {name}
+    </h5>
+    <p class="text-xs mb-1 md:text-sm text-center break-all">"{qoute}"</p>
+  
+</div>
